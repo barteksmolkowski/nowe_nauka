@@ -46,3 +46,31 @@ B = np.array([0.39999999, 0.5000001, 0.3])
 
 print(f"czy sa na oko rowne?: {np.allclose(A, B)}")
 print(f"czy sa rowne indeksami?: {A == B}")
+
+A = np.array([0.4, 0.5, 0.3, 0.9])
+B = np.array([0.38, 0.51, 0.3, 0.91])
+
+print(f"czy liczby idx A sa wieksze od liczb idx B?: {A > B}")
+print(f"to to samo tylko funkcja: {np.greater(A, B)}")
+
+print(np.zeros((4,4), dtype=int))
+
+print(f"{np.full((10, 10), 255, int)}")
+
+matrix_of_ones = np.ones((10, 10), int)
+print(matrix_of_ones * 255)
+
+matrix = np.arange(10, 100, 1, int)
+new_matrix = np.ndarray.reshape(matrix, 9, 10)
+print(new_matrix)
+
+print(np.eye(6, 6, 0, ))
+
+np.random.seed(10)
+print(np.random.rand(30))
+
+
+np.random.seed(10)
+matrix = np.random.randn(40)
+matrix = np.ndarray.reshape(matrix, 10, 4)
+print(matrix)
