@@ -11,7 +11,7 @@ import os
 # os.mkdir("pliki")
 # os.rmdir("pliki")
 os.mkdir("pliki/siema.py") # sprawdzić ścieżke
-print(f"c")
+print("c")
 print("os.rename('staraNazwa', 'nowaNazwa')")
 
 # os.remove("pliki.py")
